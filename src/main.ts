@@ -12,10 +12,18 @@ import { CommonModule } from '@angular/common'; // Import CommonModule
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
 import { AuthService } from './app/service/auth.service';
 import { AuthGuard } from './app/service/auth.guard';
+import { FormsModule } from '@angular/forms';
 
 bootstrapApplication(AppComponent, {
   providers: [
     provideRouter(routes),
-    importProvidersFrom(BrowserAnimationsModule, MaterialModule, CommonModule, AuthService, AuthGuard,NgbModule )
+    importProvidersFrom(
+      BrowserAnimationsModule, 
+      MaterialModule,
+      CommonModule,
+      AuthService,
+      AuthGuard,
+      NgbModule,
+      FormsModule )
   ]
 });

@@ -8,8 +8,15 @@ export class AuthService {
 
   constructor() {}
 
-  login() {
-    this.isLoggedIn = true;
+  login(email: string, password: string): boolean {
+    // Dummy login check
+    console.log(email);
+    console.log(password);
+    if (email === 'test@test.com' && password === 'password') {
+      this.isLoggedIn = true;
+      return true;
+    }
+    return false;
   }
 
   logout() {
