@@ -9,13 +9,12 @@ import { importProvidersFrom } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common'; // Import CommonModule
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
-// import { AuthService } from './app/service/auth.service';
-// import { AuthGuard } from './app/service/auth.guard';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthGuard } from './app/services/auth.guard';
 import { AuthService } from './app/services/auth.service';
 import { MaterialModule } from './app/materials/material.module';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -28,6 +27,7 @@ bootstrapApplication(AppComponent, {
       AuthGuard,
       NgbModule,
       FormsModule ,
-      HttpClientModule)
+      HttpClientModule,
+      DragDropModule)
   ]
 });
