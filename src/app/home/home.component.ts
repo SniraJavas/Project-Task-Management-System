@@ -14,7 +14,8 @@ import { AuthService } from '../service/auth.service';
     FormsModule,
     MaterialModule,
     UserRegisterComponent,
-    UserLoginComponent, TaskListComponent],
+    UserLoginComponent, 
+    TaskListComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
