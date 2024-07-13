@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AuthService } from './service/auth.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -12,7 +13,7 @@ import { CommonModule } from '@angular/common';
     MaterialModule,
     RouterModule, 
     FormsModule,
-  CommonModule ],
+  CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
