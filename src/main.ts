@@ -13,6 +13,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthService } from './app/service/auth.service';
 import { AuthGuard } from './app/service/auth.guard';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -24,6 +25,7 @@ bootstrapApplication(AppComponent, {
       AuthService,
       AuthGuard,
       NgbModule,
-      FormsModule )
+      FormsModule ,
+      HttpClientModule)
   ]
 });
