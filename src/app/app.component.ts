@@ -1,8 +1,8 @@
 import { Router, RouterOutlet } from '@angular/router';
 import { Component } from '@angular/core';
-import {MaterialModule} from "./material/material.module";
+import {MaterialModule} from "../app/materials/material.module";
 import { RouterModule } from '@angular/router';
-import { AuthService } from './service/auth.service';
+import { AuthService } from '../app/services/auth.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 

@@ -1,7 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { TaskListComponent } from './components/task-list/task-list.component';
-import { AuthGuard } from './service/auth.guard';
+import { AuthGuard } from '../app/services/auth.guard';
 
 export const routes: Routes = [
     {
